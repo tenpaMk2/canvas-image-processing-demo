@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script defer src="./index.js"></script>
+    <title>Example</title>
+  </head>
+  <body>
+    <div>
+      <input id="input" type="file" accept="image/png, image/jpeg" />
+      <form id="radioGroup">
+        <input type="radio" name="処理方法選択" value="オリジナル" checked />
+        オリジナル
+        <input type="radio" name="処理方法選択" value="グレースケール" />
+        グレースケール
+      </form>
+    </div>
+    <div>
+      <canvas id="original"></canvas>
+    </div>
+    <div>
+      <canvas id="processed"></canvas>
+    </div>
+  </body>
+</html>
